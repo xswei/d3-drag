@@ -172,7 +172,7 @@ function subject() {
 
 <a href="#drag_clickDistance" name="drag_clickDistance">#</a> <i>drag</i>.<b>clickDistance</b>([<i>distance</i>]) [<源码>](https://github.com/d3/d3-drag/blob/master/src/drag.js#L162 "Source")
 
-If *distance* is specified, sets the maximum distance that the mouse can move between mousedown and mouseup that will trigger a subsequent click event. If at any point between mousedown and mouseup the mouse is greater than or equal to *distance* from its position on mousedown, the click event following mouseup will be suppressed. If *distance* is not specified, returns the current distance threshold, which defaults to zero. The distance threshold is measured in client coordinates ([*event*.clientX](https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/clientX) and [*event*.clientY](https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/clientY)).
+如果指定了 *distance* 则将`click` 事件的触发条件: `mousedown` 和 `mouseup` 之间鼠标移动的距离设置为指定的距离。如果鼠标按下时的坐标与鼠标抬起时的坐标之间的距离大于或等于 *distance* 则不会触发随后的 `click` 事件。如果没有指定 *distance* 则返回当前的默认值，默认为 0。距离阈值通过坐标系统 ([*event*.clientX](https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/clientX) 和 [*event*.clientY](https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/clientY)) 测量得到。
 
 <a href="#drag_on" name="drag_on">#</a> <i>drag</i>.<b>on</b>(<i>typenames</i>, [<i>listener</i>]) [<源码>](https://github.com/d3/d3-drag/blob/master/src/drag.js#L157 "Source")
 
